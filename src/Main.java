@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
-//        task3();
+        task3();
 //        task4();
 //        task5();
 //        task6();
@@ -30,6 +30,18 @@ public class Main {
         System.out.println();
         for (int j = 10; j >= 1; j--){
             System.out.print(j + " ");
+        }
+        System.out.println();
+        System.out.println();
+    }
+    public static void task3(){
+        System.out.println("task 3");
+        int bornPer1000 = 17;
+        int deathPer1000 = 8;
+        int population = 12000000;
+        for (int i = 1; i <= 10; i++){
+            population = population + (population / 1000) * bornPer1000 - (population / 1000) * deathPer1000;
+            System.out.println("Год " + i + " численность населения составляет " + population);
         }
         System.out.println();
     }
