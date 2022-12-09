@@ -7,7 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
-//        task8();
+        task8();
     }
     public static void task1(){
         System.out.println("task 1");
@@ -100,5 +100,26 @@ public class Main {
             count++;
         }
         System.out.println();
+    }
+    public static void task8(){
+        System.out.println("task 8");
+        int currentYear = 2022;
+        int yearBefore = currentYear - 200;
+        int yearFuture = currentYear + 100;
+        int yearOfComet = 0;
+        for (int i = 0; i <= yearFuture; i++){
+            if (i >= yearBefore && i <= currentYear){
+                if (i == yearOfComet)
+                    System.out.println("Комета пролетала в " + i + " году");
+            }
+            if( i > currentYear){
+                if ( i == yearOfComet)
+                    System.out.println("Комета прилетит в " + i + " году");
+            }
+            if (i == yearOfComet){
+                yearOfComet += 79;
+            }
+
+        }
     }
 }
