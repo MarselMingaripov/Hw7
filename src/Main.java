@@ -3,7 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
-//        task4();
+        task4();
 //        task5();
 //        task6();
 //        task7();
@@ -43,6 +43,18 @@ public class Main {
             population = population + (population / 1000) * bornPer1000 - (population / 1000) * deathPer1000;
             System.out.println("Год " + i + " численность населения составляет " + population);
         }
+        System.out.println();
+    }
+    public static void task4(){
+        System.out.println("task 4");
+        double total = 15000;
+        int month = 0;
+        while (total <= 12000000){
+            total = total + total * 0.07;
+            month++;
+            System.out.println("Месяц "+ month + " сумма накоплений " + total);
+        }
+        System.out.println(month + " месяцев для накопления 12000000");
         System.out.println();
     }
 }
