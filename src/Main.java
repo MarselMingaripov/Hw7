@@ -18,6 +18,6 @@ public class Main {
             month++;
         }
         System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
-        System.out.println();
+        System.out.println( );
     }
 }
