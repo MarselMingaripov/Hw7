@@ -6,7 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
-//        task7();
+        task7();
 //        task8();
     }
     public static void task1(){
@@ -86,6 +86,19 @@ public class Main {
             }
         }
         System.out.println();
+        System.out.println();
     }
-
+    public static void task7(){
+        System.out.println("task 7");
+        int dayOfWeek = 1;
+        int count = 1;
+        while (count <= 31){
+            if (count == dayOfWeek){
+                System.out.println("Сегодня пятница, готовим отчет! " + count);
+                dayOfWeek +=7;
+            }
+            count++;
+        }
+        System.out.println();
+    }
 }
