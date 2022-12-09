@@ -5,7 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
-//        task6();
+        task6();
 //        task7();
 //        task8();
     }
@@ -70,4 +70,22 @@ public class Main {
         System.out.println(month + " месяцев для накопления 12000000");
         System.out.println();
     }
+    public static void task6(){
+        System.out.println("task6");
+        double total = 15000;
+        double percent = 0.07;
+        int month = 0;
+        int monthTotal = 9 * 12;
+        while (month <= monthTotal) {
+            total = total + total * percent;
+            month++;
+            if (month % 6 == 0) {
+                System.out.print(total + " ");
+                if (month == monthTotal / 2)
+                    System.out.println();
+            }
+        }
+        System.out.println();
+    }
+
 }
