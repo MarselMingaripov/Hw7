@@ -4,7 +4,7 @@ public class Main {
         task2();
         task3();
         task4();
-//        task5();
+        task5();
 //        task6();
 //        task7();
 //        task8();
@@ -53,6 +53,19 @@ public class Main {
             total = total + total * 0.07;
             month++;
             System.out.println("Месяц "+ month + " сумма накоплений " + total);
+        }
+        System.out.println(month + " месяцев для накопления 12000000");
+        System.out.println();
+    }
+    public static void task5(){
+        System.out.println("task 5");
+        double total = 15000;
+        int month = 0;
+        while (total <= 12000000){
+            total = total + total * 0.07;
+            month++;
+            if (month % 6 == 0)
+                System.out.println("Месяц "+ month + " сумма накоплений " + total);
         }
         System.out.println(month + " месяцев для накопления 12000000");
         System.out.println();
